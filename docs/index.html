@@ -10,7 +10,7 @@
         /* Professional font for a formal look */
         body {
             font-family: "Inter", sans-serif;
-            overflow: hidden; /* Prevent scrollbars from animation */
+            /* Removed overflow: hidden; to enable scrolling */
         }
 
         /* Animated background styles for a professional theme */
@@ -25,7 +25,7 @@
             );
             background-size: 1000% 1000%; /* Large size for subtle movement */
             animation: professionalBackgroundAnimation 40s ease infinite alternate; /* Slower, elegant animation */
-            position: fixed;
+            position: fixed; /* Keep background fixed while content scrolls */
             top: 0;
             left: 0;
             width: 100%;
@@ -64,10 +64,8 @@
     <div class="animated-background"></div>
 
     <div class="bg-white p-12 rounded-xl shadow-2xl w-full text-center border border-gray-100 relative z-10">
-        <!-- Professional Logo Placeholder (or a generic tech icon) -->
-        <svg class="mx-auto mb-10 h-24 w-48 object-contain text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0zM10 10V9a1 1 0 011-1h2a1 1 0 011 1v1m-4 0h4m-4 0h.01M12 14v4m-4-2h8"></path>
-        </svg>
+        <!-- Vodafone Global Logo -->
+        <img src="https://th.bing.com/th/id/R.e14ca8b76a5c55716e3bef2a7b1054e5?rik=QfGam8%2f5EHTs3Q&riu=http%3a%2f%2fwww.brandemia.org%2fsites%2fdefault%2ffiles%2finline%2fimages%2fvodafone_logo_portada.jpg&ehk=o65M2DVGNltK3GlWZgEdIeRdAtYnjDs94ygfw%2fMpgNk%3d&risl=&pid=ImgRaw&r=0" alt="Vodafone Global Logo" class="mx-auto mb-10 h-auto w-48 object-contain rounded-md">
 
         <!-- Main heading -->
         <h1 class="text-6xl font-extrabold text-gray-900 mb-4 tracking-tight">Professional Resource Hub</h1>
@@ -128,7 +126,7 @@
 
         <!-- Section: Learning & Insights -->
         <h2 class="text-3xl font-bold text-gray-800 mb-6 text-left border-b-2 border-green-600 pb-2">Learning & Insights</h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             <!-- Link 9 -->
             <a href="https://www.forbes.com" target="_blank" rel="noopener noreferrer"
                class="block w-full bg-gray-600 hover:bg-gray-700 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
@@ -151,6 +149,62 @@
             <a href="https://www.coursera.org" target="_blank" rel="noopener noreferrer"
                class="block w-full bg-green-700 hover:bg-green-800 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
                 Online Learning
+            </a>
+        </div>
+
+        <!-- Section: Industry Resources -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-left border-b-2 border-purple-600 pb-2">Industry Resources</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Link 13 -->
+            <a href="https://www.gartner.com" target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-purple-700 hover:bg-purple-800 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
+                Market Research
+            </a>
+
+            <!-- Link 14 -->
+            <a href="https://www.statista.com" target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-indigo-700 hover:bg-indigo-800 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
+                Statistics & Data
+            </a>
+
+            <!-- Link 15 -->
+            <a href="https://www.techcrunch.com" target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-pink-700 hover:bg-pink-800 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
+                Startup News
+            </a>
+
+            <!-- Link 16 -->
+            <a href="https://www.wired.com" target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-red-700 hover:bg-red-800 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
+                Technology Trends
+            </a>
+        </div>
+
+        <!-- Section: Career Development -->
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-left border-b-2 border-orange-600 pb-2">Career Development</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+            <!-- Link 17 -->
+            <a href="https://www.indeed.com" target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-orange-700 hover:bg-orange-800 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
+                Job Search
+            </a>
+
+            <!-- Link 18 -->
+            <a href="https://www.glassdoor.com" target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-yellow-700 hover:bg-yellow-800 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
+                Company Reviews
+            </a>
+
+            <!-- Link 19 -->
+            <a href="https://www.udemy.com" target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-lime-700 hover:bg-lime-800 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
+                Skill Development
+            </a>
+
+            <!-- Link 20 -->
+            <a href="https://www.themuse.com" target="_blank" rel="noopener noreferrer"
+               class="block w-full bg-fuchsia-700 hover:bg-fuchsia-800 text-white font-semibold py-5 px-6 rounded-lg button-subtle-hover">
+                Career Advice
             </a>
         </div>
 
